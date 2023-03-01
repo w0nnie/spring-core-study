@@ -16,7 +16,8 @@ public class MemberApp {
 
         Member member1 = memberService.findMember(1L);
 
-        System.out.println(member.getName());
+        System.out.println(member.getGrade());
+
         System.out.println(member1.getName());
 
     }
