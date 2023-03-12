@@ -17,9 +17,6 @@ public class OrderServiceImpl implements OrderService {
         this.discountPolicy = discountPolicy;
     }
 
-
-    //dip 위반 구현체가 아닌 추상화한 객체만 의존해야한다.
-
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
         Member member = memberRepository.findById(memberId);
